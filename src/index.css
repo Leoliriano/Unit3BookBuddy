@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial', sans-serif; /* Changed to Arial for a more modern look */
+  background-color: #dc8585;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark grey text for better readability */
+}
+
+#logo-image {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+/* Add your own custom styles here */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form styling */
+.form {
+  width: 50%;
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #007185; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #005f72;
+}
+
+/* Login page layout */
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Book listing styles */
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+/* Input group styling for better alignment */
+.input-group {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Card styling */
+.card {
+  width: 240px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #fcfcfc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  padding: 8px;
+}
+
+.card-text {
+  padding: 0 8px 8px;
+  font-size: 14px;
+}
+
+/* Single book page styling */
+.singleBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.singleImg {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.singleBookContents {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .form, .input-group {
+    width: 90%;
+  }
+
+  .singleBookContents {
+    flex-direction: column;
+    width: 100%;
+  }
+}
